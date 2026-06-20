@@ -1,4 +1,4 @@
-export async function parseUrl(urlString: string): { success: boolean, result?: any, error?: string } {
+export async function parseUrl(urlString: string): Promise<{ success: boolean, result?: any, error?: string }> {
     try {
         const parsed = new URL(urlString);
         const queryParams: Record<string, string> = {};
@@ -22,7 +22,7 @@ export async function parseUrl(urlString: string): { success: boolean, result?: 
     }
 }
 
-export async function extractQuery(urlString: string, paramKey: string): { success: boolean, result?: string, error?: string } {
+export async function extractQuery(urlString: string, paramKey: string): Promise<{ success: boolean, result?: string, error?: string }> {
     try {
         const parsed = new URL(urlString);
         if (parsed.searchParams.has(paramKey)) {
@@ -35,7 +35,7 @@ export async function extractQuery(urlString: string, paramKey: string): { succe
     }
 }
 
-export async function injectQuery(urlString: string, paramsJsonStr: string): { success: boolean, result?: string, error?: string } {
+export async function injectQuery(urlString: string, paramsJsonStr: string): Promise<{ success: boolean, result?: string, error?: string }> {
     try {
         const parsed = new URL(urlString);
         let paramsToInject: Record<string, string>;

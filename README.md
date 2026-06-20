@@ -2,7 +2,8 @@
 
 A structural Model Context Protocol (MCP) server that enables autonomous agents to precisely deconstruct, analyze, and manipulate complex Uniform Resource Locators (URLs) and query parameters without the risk of hallucination.
 
-[![Deploy on Vinkius Cloud](https://img.shields.io/badge/Deploy%20on-Vinkius%20Cloud-blue?style=for-the-badge)](https://vinkius.com/mcp/url-parser)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-url-engine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/url-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/url-parser-mcp)
 
 ## Why AI Struggles with URL Parsing
 
@@ -23,17 +24,24 @@ The **URL Parser MCP** provides agents with a deterministic URI parsing engine. 
 * `build_url`
   * **Function**: Safely constructs a complete URL from component parts, ensuring mathematically perfect URL encoding.
 
-## Deploy on Vinkius Cloud
+## Run on Vinkius Edge (Free Edge Hosting)
 
-Add robust URL manipulation to your AI stack instantly without local deployment overhead.
+Vinkius provides **free, highly available edge hosting** using secure V8 isolates. Deploying to the Vinkius Edge is the fastest way to make this MCP server accessible to any AI agent anywhere, with sub-millisecond response times and zero maintenance.
 
-👉 **[Connect the URL Parser MCP via Vinkius](https://vinkius.com/mcp/url-parser)**
+1. Clone this repository
+2. Run the deployment command:
 
-Hosted natively on Vinkius Cloud, ensuring edge-optimized performance and highly available execution.
+```bash
+npx mcpfusion deploy
+```
 
-## Open Source
+That's it. Your MCP server is now live, secure, and ready to be connected to your agents.
 
-Built on [@mcpfusion/core](https://www.npmjs.com/package/@mcpfusion/core).
+👉 **[Access the URL Parser MCP on Vinkius](https://vinkius.com/mcp/deterministic-url-engine)**
+
+## Local Development
+
+Constructed using [MCP Fusion](https://www.npmjs.com/package/@mcpfusion/core) for reliable, strictly typed execution.
 
 ```bash
 npm install

@@ -1,5 +1,5 @@
-import { createPresenter, ui } from '@vurb/core';
-import { defineModel } from '@vurb/core';
+import { createPresenter, ui } from '@mcpfusion/core';
+import { defineModel } from '@mcpfusion/core';
 
 const UrlResponseModel = defineModel('UrlResponse', (m) => {
     m.casts({

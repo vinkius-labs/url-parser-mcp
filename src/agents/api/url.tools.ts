@@ -1,4 +1,4 @@
-import { f } from '../../f.js';
+import { f } from '../../mcpfusion.js';
 import { UrlResponsePresenter } from '../../views/index.js';
 import { parseUrl, extractQuery, injectQuery } from '../../engine/logic.js';
 
